@@ -5,35 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayanti</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head> 
 <body>
+
     <!-- Header -->
     <header>
-        <nav>
-            <!-- Logo -->
-                <a href="index.html"><img class="jayanti_logo-header" src="./images/jayanti-logo.jpg" alt="jayanti-logo"></a>
-            <!-- Menú -->
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
-                <li><a href="./pages/yoga-integral.html">Yoga Integral</a></li>
-                <li><a href="./pages/clases.html">Clases</a></li>
-                <li><a href="./pages/otros-servicios.html">Otros servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+
+        <!-- NAV BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg nav-margin">
+            <div class="container-fluid bg-white">
+              <a class="navbar-brand img-fluid" href="index.html"><img class="jayanti_logo-header" src="./images/jayanti-logo.jpg" alt="jayanti-logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="./pages/sobre-mi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="./pages/yoga-integral.html">Yoga Integral</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="./pages/clases.html">Clases</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="./pages/otros-servicios.html">Otros servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
+        <!-- FIN NAV BOOTSTRAP -->
+
     </header>
     <!-- Fin Header -->
 
     <main>
         <!-- Primera Sección -->
-        <section id="indexPrimeraSeccion">
+        <section data-aos="fade-zoom-in" data-aos-duration="2000" class="img-fluid" id="indexPrimeraSeccion">
             <div class="primeraSeccion--divContainer">
-                <h1>Heading 1</h1>
+                <h1 class="h1-personalizado">Clases de Yoga Integral</h1>
                 <!-- BOTÓN hacia YOGA INTEGRAL -->
                 <br>
-                <button><a href="./pages/yoga-integral.html">Yoga Integral</a></button>
+                <button class="botones"><a href="./pages/yoga-integral.html">Sobre el Yoga Integral</a></button>
             </div>
         </section>
         <!-- Fin Primera Sección -->  
@@ -41,7 +76,7 @@
         <!-- Segunda Sección -->
         <section id="indexSegundaSeccion">
             <div class="segundaSeccion-divContainer1">
-                <h2>Heading 2</h2>
+                <h2>¿Por qué hacer Yoga?</h2>
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Recusandae quis nisi doloremque reiciendis quibusdam 
@@ -52,43 +87,47 @@
 
             <br>
 
-            <div class="segundaSeccion-divContainer2">
-                <article class="segundaSeccion-article--beneficios">
-                    <img src="./images/beneficios.jpg" alt="beneficio de yoga integral">
-                    <br>
-                    <h3>POSTURA</h3>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Quis doloribus mollitia ratione id harum vel dolor modi, 
-                    </p>
-                </article>
-        
-                <article class="segundaSeccion-article--beneficios">
-                    <img src="./images/beneficios.jpg" alt="beneficio de yoga integral">
-                    <br>
-                    <h3>BIENESTAR</h3>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Quis doloribus mollitia ratione id harum vel dolor modi,
-                    </p>
-                </article>
+            <!-- GRID BOOTSTRAP-->
 
-                <article class="segundaSeccion-article--beneficios">
-                    <img src="./images/beneficios.jpg" alt="beneficio de yoga integral">
-                    <br>
-                    <h3>MÚSCULOS</h3>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Quis doloribus mollitia ratione id harum vel dolor modi,
-                    </p>
-                </article>
+            <div class="text-center segundaSeccion-divContainer2">
+                <div class="row">
+                    <div data-aos="fade-down" data-aos-duration="2000" class="col md-6 segundaSeccion-article--beneficios">
+                        <img src="./images/beneficios-1.jpg" alt="beneficio de yoga integral">
+                        <br>
+                        <h3>POSTURA</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quis doloribus mollitia ratione id harum vel dolor modi, 
+                        </p>   
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="2000" class="col md-6 segundaSeccion-article--beneficios">
+                        <img src="./images/beneficios-2.jpg" alt="beneficio de yoga integral">
+                        <br>
+                        <h3>BIENESTAR</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quis doloribus mollitia ratione id harum vel dolor modi,
+                        </p>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="2000" class="col md-12 segundaSeccion-article--beneficios">
+                        <img src="./images/beneficios-3.jpg" alt="beneficio de yoga integral">
+                        <br>
+                        <h3>MÚSCULOS</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quis doloribus mollitia ratione id harum vel dolor modi,
+                        </p>
+                    </div>
+                </div>
             </div>
-            
+
+            <!-- FIN GRID BOOTSTRAP-->
+
             <br>
 
             <!-- BOTÓN hacia CLASES -->
             <div class="segundaSeccion-boton">
-            <button class="segundaSeccion-boton"><a href="./pages/clases.html">Días y Horarios de Clases</a></button>
+            <button class="segundaSeccion-boton botones"><a href="./pages/clases.html">Días y Horarios de Clases</a></button>
             </div>
         </section> 
         <!-- Fin Segunda Sección -->
@@ -96,74 +135,63 @@
 
     <!-- Tercera Sección: Frase  -->
     <section id="indexTerceraSeccion">
-        <p class="indexFrase">" frase "</p>
+        <em><p data-aos="fade-zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000" class="indexFrase">"Encuentra el camino de regreso a tí"</p></em>
     </section>
     <!-- Fin Tercera Sección: Frase  -->
 
-    <!-- Cuarta Sección -->
-    <section id="indexCuartaSeccion">
-        <div class="cuartaSeccion-divContainer">
-            <article class="cuartaSeccion-divContainer--article">
+    <!-- Cuarta Sección  -->
+    <section data-aos="fade-zoom-in" data-aos-duration="2000" class="container">
+        <div class="row index-cuartaSeccion">
+            <div class="index-cuartaSeccion-instructora div-instructora-movil col-sm-12 col-md-12 col-lg-7">
                 <h2>Instructora de Yoga</h2>
                 <br>
-                <p class="cuartaseccion-divContainer--article-p">Lorem ipsum dolor, 
-                sit amet consectetur adipisicing elit. 
-                Molestiae sint obcaecati voluptates nesciunt necessitatibus 
-                adipisci soluta, eius enim nam voluptatibus eum, excepturi 
-                dolores corporis expedita nemo. Labore temporibus minus ut.
-                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus consequatur enim laboriosam exercitationem molestias possimus, sunt rem sequi? Quaerat sunt quasi accusantium amet, vitae cupiditate ipsum doloremque veniam fuga.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus consequatur enim laboriosam exercitationem molestias possimus, sunt rem sequi? Quaerat sunt quasi accusantium amet, vitae cupiditate ipsum doloremque veniam fuga.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus consequatur enim laboriosam exercitationem molestias possimus, sunt rem sequi? Quaerat sunt quasi accusantium amet, vitae cupiditate ipsum doloremque veniam fuga.</p> 
                 <br>
-                <p class="cuartaseccion-divContainer--article-p">Lorem ipsum dolor, 
-                sit amet consectetur adipisicing elit. 
-                Molestiae sint obcaecati voluptates nesciunt necessitatibus 
-                adipisci soluta, eius enim nam voluptatibus eum, excepturi 
-                dolores corporis expedita nemo. Labore temporibus minus ut.
-                </p>
-                <br>
-                <p class="cuartaseccion-divContainer--article-p">Lorem ipsum dolor, 
-                sit amet consectetur adipisicing elit. 
-                Molestiae sint obcaecati voluptates nesciunt necessitatibus 
-                adipisci soluta, eius enim nam voluptatibus eum, excepturi 
-                colores corporis expedita nemo. Labore temporibus minus ut.
-                </p>
-                <br>
-                <!-- BOTÓN hacia SOBRE MÍ -->
-                <button><a href="./pages/sobre-mi.html">Mi recorrido</a></button>
-            </article>
-
-            <!-- Imagen -->
-            <img class= "imagenIndex-instructoraDeYoga" src="./images/instructora-de-yoga.jpg" alt="instructora de yoga">
+                <button class="botones"><a href="./pages/sobre-mi.html">Conoce más sobre mí</a></button>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5">
+                <img src="./images/instructora-de-yoga.jpg" class="imagen noneTablet" alt="instructora de yoga">
+            </div>
         </div>
     </section>
-    <!-- Fin Cuarta Sección -->
+    <!-- Fin Cuarta Sección  -->
 
     <!-- Footer -->
-    <footer id="contacto">
-        
+    <footer data-aos="fade-zoom-in" data-aos-duration="1000" id="contacto" class="container-fluid footer-fondo">
         <!-- Logo -->
         <div class="divFooter1-logo">
-        <a href="index.html"><img src="./images/jayanti-logo.jpg" alt="jayanti-logo"></a>
+        <a href="index.html"><img src="./images/jayanti-logo-png.png" alt="jayanti-logo"></a>
         </div>
 
-        <br>
-
-        <div class="divFooter2-container">
-            <div class="iconos">
-                <img src="./images/icono-whatsapp.png" alt="icono-whatsapp"> 
-                <span>3446 111111</span>
-            </div>
-                <br>
-            <div class="iconos">
-                <img src="./images/icono-maps.png" alt="icono-maps">
-                <span>Gualeguaychú, Entre Ríos</span>
-            </div>
-                <br>
-            <div class="iconos">
-                <a href="https://www.instagram.com/iza_yoguini/"><img src="./images/icono-instagram.png" alt="icono-instagram"></a>
-                <span>@iza_yoguini</span>
+        <div class="text-center">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-4 redes">
+                    <img src="./images/icono-whatsapp.png" alt="icono-whatsapp"> 
+                    <span>3446 111111</span>
+                </div>
+                 <div class="col-sm-6 col-md-4 col-lg-4 redes">
+                    <img src="./images/icono-instagram.png" alt="icono-instagram">
+                    <a class="a-footer" href="https://www.instagram.com/iza_yoguini/" target="_blank">@iza_yoguini</a>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 redes">
+                    <img src="./images/icono-maps.png" alt="icono-maps">
+                    <span>Gualeguaychú, Entre Ríos</span>
+                </div>
             </div>
         </div>
     </footer>
     <!-- Fin Footer -->
+
+    <!-- Bootstrap JV -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 </html>

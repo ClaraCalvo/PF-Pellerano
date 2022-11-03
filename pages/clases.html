@@ -5,163 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clases</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    
 </head>
 <body>
+
     <!-- Header -->
     <header>
-        <nav>
-            <!-- Logo -->
-                <a href="../index.html"><img class="jayanti_logo-header" src="../images/jayanti-logo.jpg" alt="jayanti-logo"></a>
-            <!-- Menú -->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobre-mi.html">Sobre mí</a></li>
-                <li><a href="./yoga-integral.html">Yoga Integral</a></li>
-                <li><a href="clases.html">Clases</a></li>
-                <li><a href="./otros-servicios.html">Otros servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+
+        <!-- NAV BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg nav-margin">
+            <div class="container-fluid bg-white">
+              <a class="navbar-brand img-fluid" href="../index.html"><img class="jayanti_logo-header" src="../images/jayanti-logo.jpg" alt="jayanti-logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="./sobre-mi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="./yoga-integral.html">Yoga Integral</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="clases.html">Clases</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="./otros-servicios.html">Otros servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-menu" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
+        <!-- FIN NAV BOOTSTRAP -->
+
     </header>
-    <!-- Fin Header -->  
+    <!-- Fin Header -->
 
-    <!-- Primera Sección -->
-    <section id="clasesPrimeraSeccion">
-        <div class="primeraSeccion--divContainer">
-            <h1>Clases de Yoga</h1>
-        </div>
-    </section>
-    <!-- Fin Primera Sección -->
+    <main>
+
+        <!-- Primera Sección -->
+        <section data-aos="fade-zoom-in" data-aos-duration="2000" class="img-fluid" id="clasesPrimeraSeccion">
+            <div class="primeraSeccion--divContainer">
+                <h1 class="h1-personalizado">Clases de Yoga</h1>
+            </div>
+        </section>
+        <!-- Fin Primera Sección -->
     
-    <!-- Segunda Sección -->
-    <section class="clases-heading2">
-        <h2>Heading 2</h2>
-    </section>
-    <!-- Fin Segunda Sección -->   
+        <!-- Segunda Sección -->
+        <section class="clases-heading2">
+            <h2>Elegí tu clase de Yoga ideal</h2>
+            <br>
+        </section>
+        <!-- Fin Segunda Sección -->   
 
-    <!-- Tecera Sección --> 
-    <section>
-        <!-- Div Contenedor 1 -->
-        <div class="clases-divsContenedores">
-            <!-- Añadir Imagen -->
-            <img src="../images/beneficios.jpg" alt="">
-            <!-- Párrafo -->
-            <div class="clases-divsContenedores--parrafos">
-                <h3>Domicilio 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                elit. Architecto, repellendus praesentium repudiandae 
-                rem vitae quisquam soluta amet ab corrupti id laborum,
-                veniam possimus nesciunt magni aliquam ipsa corporis 
-                unde saepe!
-                </p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Architecto, repellendus praesentium repudiandae 
-                    rem vitae quisquam soluta amet ab corrupti id laborum,
-                    veniam possimus nesciunt magni aliquam ipsa corporis 
-                    unde saepe!
-                </p>                
+        <!-- Tecera Sección --> 
+        <section>
+            <!-- Div Contenedor 1 -->
+            <div class="clases-divsContenedores">
+                <!-- Añadir Imagen -->
+                <img data-aos="fade-zoom-in" data-aos-duration="1000" src="../images/beneficios.jpg" alt="">
+                <!-- Párrafo -->
+                <div data-aos="fade-zoom-in" data-aos-duration="2000" class="clases-divsContenedores--parrafos">
+                    <h3>Domicilio 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Architecto, repellendus praesentium repudiandae 
+                        rem vitae quisquam soluta amet ab corrupti id laborum,
+                        veniam possimus nesciunt magni aliquam ipsa corporis 
+                        unde saepe!
+                    </p>               
+                </div>
+                <!-- Dirección -->
+                <div data-aos="fade-zoom-in" data-aos-duration="3000" class="clases-divsContenedores--direcciones">
+                    <img src="../images/icono-maps.png" alt="icono-maps">
+                    <p>Lugar</p>
+                    <p>Dirección</p>
+                </div>
             </div>
-            <!-- Dirección -->
-            <div class="clases-divsContenedores--direcciones">
-                <img src="../images/icono-maps.png" alt="icono-maps">
-                <p>Lugar</p>
-                <p>Dirección</p>
-            </div>
-        </div>
-        <!-- Fin Div Contenedor 1 -->
+            <!-- Fin Div Contenedor 1 -->
 
-        <!-- Div Contenedor 2 -->
-        <div class="clases-divsContenedores">
-            <!-- Añadir Imagen -->
-            <img src="../images/beneficios.jpg" alt="">
-            <!-- Párrafo -->
-            <div class="clases-divsContenedores--parrafos">
-                <h3>Domicilio 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                elit. Architecto, repellendus praesentium repudiandae 
-                rem vitae quisquam soluta amet ab corrupti id laborum,
-                veniam possimus nesciunt magni aliquam ipsa corporis 
-                unde saepe!
-                </p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Architecto, repellendus praesentium repudiandae 
-                    rem vitae quisquam soluta amet ab corrupti id laborum,
-                    veniam possimus nesciunt magni aliquam ipsa corporis 
-                    unde saepe!
-                </p>
-            </div>
-            <!-- Dirección -->
-            <div class="clases-divsContenedores--direcciones">
-                <img src="../images/icono-maps.png" alt="icono-maps">
-                <p>Lugar</p>
-                <p>Dirección</p>
-            </div>
-        </div>
-        <!-- Fin Div Contenedor 2 -->
+            <br>
 
-        <!-- Div Contenedor 3 -->
-        <div class="clases-divsContenedores">
-            <!-- Imagen -->
-            <img src="../images/beneficios.jpg" alt="">
-            <!-- Párrafo -->
-            <div class="clases-divsContenedores--parrafos">
-                <h3>Domicilio 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                elit. Architecto, repellendus praesentium repudiandae 
-                rem vitae quisquam soluta amet ab corrupti id laborum,
-                veniam possimus nesciunt magni aliquam ipsa corporis 
-                unde saepe!
-                </p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Architecto, repellendus praesentium repudiandae 
-                    rem vitae quisquam soluta amet ab corrupti id laborum,
-                    veniam possimus nesciunt magni aliquam ipsa corporis 
-                    unde saepe!
-                </p>                
+            <!-- Div Contenedor 2 -->
+            <div class="clases-divsContenedores">
+                <!-- Añadir Imagen -->
+                <img data-aos="fade-zoom-in" data-aos-duration="1000" src="../images/beneficios.jpg" alt="">
+                <!-- Párrafo -->
+                <div data-aos="fade-zoom-in" data-aos-duration="2000" class="clases-divsContenedores--parrafos">
+                    <h3>Domicilio 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Architecto, repellendus praesentium repudiandae 
+                        rem vitae quisquam soluta amet ab corrupti id laborum,
+                        veniam possimus nesciunt magni aliquam ipsa corporis 
+                        unde saepe!
+                    </p>
+                </div>
+                <!-- Dirección -->
+                <div data-aos="fade-zoom-in" data-aos-duration="3000" class="clases-divsContenedores--direcciones">
+                    <img src="../images/icono-maps.png" alt="icono-maps">
+                    <p>Lugar</p>
+                    <p>Dirección</p>
+                </div>
             </div>
-            <!-- Dirección -->
-            <div class="clases-divsContenedores--direcciones">
-                <img src="../images/icono-maps.png" alt="icono-maps">
-                <p>Lugar</p>
-                <p>Dirección</p>
-            </div>
-        </div>
-        <!-- Fin Div Contenedor 3 -->
+            <!-- Fin Div Contenedor 2 -->
 
-    </section>
-    <!-- Fin Tecera Sección --> 
+            <br>
+
+            <!-- Div Contenedor 3 -->
+            <div class="clases-divsContenedores">
+                <!-- Imagen -->
+                <img data-aos="fade-zoom-in" data-aos-duration="1000" src="../images/beneficios.jpg" alt="">
+                <!-- Párrafo -->
+                <div data-aos="fade-zoom-in" data-aos-duration="2000" class="clases-divsContenedores--parrafos">
+                    <h3>Domicilio 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Architecto, repellendus praesentium repudiandae 
+                        rem vitae quisquam soluta amet ab corrupti id laborum,
+                        veniam possimus nesciunt magni aliquam ipsa corporis 
+                        unde saepe!
+                    </p>           
+                </div>
+                <!-- Dirección -->
+                <div data-aos="fade-zoom-in" data-aos-duration="3000" class="clases-divsContenedores--direcciones">
+                    <img src="../images/icono-maps.png" alt="icono-maps">
+                    <p>Lugar</p>
+                    <p>Dirección</p>
+                </div>
+            </div>
+            <!-- Fin Div Contenedor 3 -->
+
+        </section>
+        <!-- Fin Tecera Sección --> 
+    </main>
 
     <!-- Footer -->
-    <footer id="contacto">
-        
+    <footer data-aos="fade-zoom-in" data-aos-duration="1000" id="contacto" class="container-fluid footer-fondo">
         <!-- Logo -->
         <div class="divFooter1-logo">
-        <a href="../index.html"><img src="../images/jayanti-logo.jpg" alt="jayanti-logo"></a>
+        <a href="../index.html"><img src="../images/jayanti-logo-png.png" alt="jayanti-logo"></a>
         </div>
 
-        <br>
-
-        <div class="divFooter2-container">
-            <div class="iconos">
-                <img src="../images/icono-whatsapp.png" alt="icono-whatsapp"> 
-                <span>3446 111111</span>
-            </div>
-                <br>
-            <div class="iconos">
-                <img src="../images/icono-maps.png" alt="icono-maps">
-                <span>Gualeguaychú, Entre Ríos</span>
-            </div>
-                <br>
-            <div class="iconos">
-                <a href="https://www.instagram.com/iza_yoguini/"><img src="../images/icono-instagram.png" alt="icono-instagram"></a>
-                <span>@iza_yoguini</span>
+        <div class="text-center">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-4 redes">
+                    <img src="../images/icono-whatsapp.png" alt="icono-whatsapp"> 
+                    <span>3446 111111</span>
+                </div>
+                 <div class="col-sm-6 col-md-4 col-lg-4 redes">
+                    <img src="../images/icono-instagram.png" alt="icono-instagram">
+                    <a class="a-footer" href="https://www.instagram.com/iza_yoguini/" target="_blank">@iza_yoguini</a>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 redes">
+                    <img src="../images/icono-maps.png" alt="icono-maps">
+                    <span>Gualeguaychú, Entre Ríos</span>
+                </div>
             </div>
         </div>
     </footer>
-    <!-- Fin Footer -->    
+    <!-- Fin Footer -->
+
+    <!-- Bootstrap JV -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

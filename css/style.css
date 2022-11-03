@@ -5,16 +5,36 @@
     padding: 0;
 }
 
-header {
-    margin: 0px 80px;
-}
-
+/*ESCRITORIO*/
 section {
     margin: 0px 80px;
 }
 
+/*CELULAR Y TABLET */
+@media only screen and (max-width: 992px) {
+    section {
+        margin: 0px 40px;
+    }
+}
+
 footer {
     margin: 0px 80px;
+}
+
+body {
+    font-family: 'Lora', serif;
+    }
+
+.botones {
+    border: none;
+    border-radius: 15px;
+    padding: 2px 10px;
+    background-color: #cb6b31;
+    transition: all 1s;
+}
+
+.botones:hover {
+    transform: scale(1.2);
 }
 
 /*Header*/
@@ -24,8 +44,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    height: 80px;
-    width: 100%;
+    height: 90px;
+}
+
+.nav-margin {
+    margin: 0px 30px;
 }
 
 ul {
@@ -34,42 +57,67 @@ ul {
 
 li {
     list-style: none;
-    margin-left: 40px;
+    margin-left: 30px;
+}
+
+/*MÓVIL Y TABLET*/
+@media only screen and (max-width: 992px) {
+
+    .nav-margin {
+        margin: 0px;
+    }
+
+    li {
+        margin-left: 10px;
+        border-bottom: 1px solid lightgray;
+    }
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
+
+a:hover {
+    color: white;
+}
+
+.color-menu {
+    color: #cb6b31;
+}
+
 
 /*Fin Menú*/
 /*Fin Header*/
 
 /*Footer*/
+
+.footer-fondo {
+    background-color: rgb(255, 240, 219);
+}
+
+.redes {
+    padding: 10px;
+    border: rgb(233, 227, 227) solid 1px;
+}
+
+.a-footer {
+    color: var(--bs-body-color);
+}
+
+.a-footer:hover {
+    color: #cb6b31;
+}
+
 /*Logo*/
 .divFooter1-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding: 10px;
+
 }
 /*Fin Logo*/
-
-/*divContainer*/
-.divFooter2-container {
-    display: flex;
-}
-/*divContainer*/
-
-/*Íconos*/
-.iconos {
-    display: flex;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-    padding-left: 120px;
-    padding-bottom: 10px;
-}
-/*Fin Íconos*/
 /*Fin Footer*/
 /* Fin GENERALES */
 
@@ -81,12 +129,14 @@ a {
 /*Background*/
 #indexPrimeraSeccion {
     margin: 0;
-    height: 600px;
+    height: 500px;
     width: 100%;
     background-image: url(../images/bakground-primera-seccion.JPG);
+    background-size: cover;
 }
 /*Fin Background*/
 
+/*APLICA A TODAS LAS SECCIONES*/
 /*divContainer*/
 .primeraSeccion--divContainer {
     text-align: right;
@@ -98,6 +148,11 @@ a {
 h1 {
     color: white;
 }
+
+.h1-personalizado {
+    text-shadow: 1px 4px 4px black;
+}
+
 /*Fin Primera Sección/*
 
 /*Segunda Sección*/
@@ -112,24 +167,33 @@ h1 {
 }
 /*Fin divContainer1 - Título y Párrafo*/
 
+/*ESCRITORIO*/
 /*divContainer2 - Beneficios*/
 .segundaSeccion-divContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/*Articles: Beneficios*/
+/*Div: Beneficios*/
 .segundaSeccion-article--beneficios {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    height: 300px;
     width: 350px;
+    transition: all 10s;
 }
-/*Fin Articles: Beneficios*/
+
+/*CELULAR*/
+@media only screen and (max-width: 768px) {
+    .segundaSeccion-divContainer2 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .segundaSeccion-article--beneficios {
+        padding-top: 20px;
+    }  
+}
+
+/*Fin Div: Beneficios*/
 /*Fin divContainer2 - Beneficios*/
 
 /*Botón*/
@@ -149,50 +213,72 @@ h1 {
 /*Frase*/
 .indexFrase {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
+    font-size: x-large;
 }
 /*Fin Frase*/
 /*Fin Tercera Sección*/
 
 /*Cuarta Sección*/
-#indexCuartaSeccion {
-    margin: 0;
-    background-color: rgba(236, 176, 141, 0.288);
-    height: 600px;
+.imagen {
     width: 100%;
 }
 
-/*divContainer - Instructora de Yoga (article e imagen)*/
-.cuartaSeccion-divContainer {
-    display: flex;
-    justify-content: center;
+.index-cuartaSeccion-instructora {
+    padding-left: 50px;
 }
 
-/*Article*/
-.cuartaSeccion-divContainer--article {
-    background-color: white;
-    width: 50%;
-    height: 290px;
-    margin-top: 125px;
-    padding: 30px;
+/*CELULAR*/
+@media only screen and (max-width: 767px) {
+    .imagen {
+        padding: 40px 0px;
+    }
+
+    .index-cuartaSeccion {
+        padding: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .index-cuartaSeccion-instructora {
+        padding-left: 0px;
+    }
+    
 }
 
-/*Párrafos dentro de Article*/
-.cuartaseccion-divContainer--article-p {
-    width: 80%;
-}
-/*Fin Párrafos dentro de Article*/
-/*Fin Article/
+/*TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .noneTablet {
+        display: none;
+    }
 
-/*Imagen*/
-.imagenIndex-instructoraDeYoga {
-    width: 420px;
-    margin-top: 55px;
-    margin-left: -90px;
-    backdrop-filter: grayscale(30%);
+    .index-cuartaSeccion {
+        padding: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .index-cuartaSeccion-instructora {
+        padding-left: 0px;
+    }
 }
-/*Fin Imagen*/
-/*Fin divContainer - Instructora de Yoga*/
+
+/*ESCRITORIO*/
+@media only screen and (min-width: 992px) {
+    .container {
+        padding: 60px 0px;
+        overflow: hidden;
+    }
+
+    .div-instructora-movil {
+        padding-right: 50px;
+    }
+
+    .imagen {
+        margin-left: 40px;
+        width: 400px;
+    }
+}
 /*Fin Cuarta Sección*/
 
 /* Fin INDEX */
@@ -205,10 +291,12 @@ h1 {
 /*Background*/
 #sobre-miPrimeraSeccion {
     margin: 0;
-    height: 600px;
+    height: 500px;
     width: 100%;
     background-image: url(../images/sobre-mi-background.jpg);
+    background-size: cover;
 }
+
 /*Fin Background*/
 /*Fin Primera Sección*/
 
@@ -243,6 +331,11 @@ h1 {
     width: 600px;
     padding-top: 40px;
 }
+
+.sobre-mi--cuartaseccion-img {
+    padding-top: 15px;
+}
+
 /*Fin Cuarta Seccion*/
 
 /* Fin SOBRE MÍ */
@@ -255,11 +348,21 @@ h1 {
 /*Background*/
 #yoga-integralPrimeraSeccion {
     margin: 0;
-    height: 600px;
+    height: 500px;
     width: 100%;
     background-image: url(../images/yoga-integral-background.jpg);
+    background-size: cover;
 }
 /*Fin Background*/
+
+/*divContainer*/
+.yogaIntegral--primeraSeccion--divContainer {
+    text-align: right;
+    padding-top: 350px;
+    padding-right: 80px;
+}
+/*Fin divContainer*/
+
 /*Fin Primera Sección*/
 
 /*Segunda Seccion*/
@@ -270,38 +373,71 @@ h1 {
 /*Fin Segunda Seccion*/
 
 /*Tercera Seccion*/
-.secciones-yoga-integral {
-    margin: 0;
-    padding: 0;
+.yogaIntegral-terceraSeccion {
+    margin: 20px 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #fff2ea;
 }
 
-/*Div Contenedor Izq*/
-.yoga-integral--divizq {
-    display: flex;
-    justify-content: center;
+.yogaIntegral-terceraSeccion-h2 {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.yoga-integral--divizq-parrafo {
-    padding: 40px;
-}
-/*Fin Div Contenedor Izq*/
-
-/*Div Contenedor Der*/
-.yoga-integral--divder {
-    display: flex;
+/*CELULAR Y TABLET*/
+@media only screen and (max-width: 991px) {
+    .yogaIntegral-terceraSeccion-divstodos {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
-.yoga-integral--divder-parrafo {
-    padding: 40px;
+.yogaIntegral-terceraSeccion-div1y3 {
+    padding: 0px 20px;
+    text-align: left;
+    align-items: center;
 }
-/*Fin Div Contenedor Der*/
+
+.yogaIntegral-terceraSeccion-div2 {
+    padding: 0px 20px;
+    text-align: right;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .yogaIntegral-terceraSeccion-div2 {
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: left;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+
+
+
 /*Fin Tercera Seccion*/
 
 /*Cuarta Seccion*/
+
 .yoga-integral--preguntas {
     text-align: center;
-    padding: 40px;
+    padding: 50px 0px;
 }
+
+.accordion-button:not(.collapsed) {
+    color: #cb6b31;
+    background-color: #faefe7;
+}
+
+.yoga-integral--preguntas-div {
+    padding-bottom: 30px;
+}
+
 /*Fin Cuarta Seccion*/
 
 /* Fin YOGA INTEGRAL */
@@ -314,9 +450,10 @@ h1 {
 /*Background*/
 #clasesPrimeraSeccion {
     margin: 0;
-    height: 600px;
+    height: 500px;
     width: 100%;
     background-image: url(../images/clases-background.jpg);
+    background-size: cover;
 }
 /*Fin Background*/
 
@@ -356,9 +493,10 @@ h1 {
 /*Background*/
 #otros-serviciosPrimeraSeccion {
     margin: 0;
-    height: 600px;
+    height: 500px;
     width: 100%;
     background-image: url(../images/otros-servicios-background.jpg);
+    background-size: cover;
 }
 /*Fin Background*/
 
