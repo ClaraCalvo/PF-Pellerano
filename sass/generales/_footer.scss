@@ -1,0 +1,35 @@
+/* FOOTER */
+@import '../base/listas';
+
+footer {
+    margin: 0px 80px;
+    background-color: nth($colores, 4);
+
+    /* Logo */
+    .divFooter1-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    
+    }
+
+    .redes {
+        padding: 10px;
+        border: nth($colores, 5) solid 1px;
+
+        @media only screen and (max-width: 768px) {
+            border: 0px;
+            border-top: nth($colores, 5) solid 1px;
+        }
+    }
+
+    .a-footer {
+        color: nth($colores, 3);
+
+        &:hover {
+            color: nth($colores, 1);
+        }
+    }
+}
+/* FIN FOOTER */

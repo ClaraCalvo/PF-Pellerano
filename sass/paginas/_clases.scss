@@ -1,0 +1,59 @@
+/* CLASES */
+@import '../base/listas';
+
+/*Primera Sección*/
+.clasesPrimeraSeccion {
+    @extend %primera-seccion;
+    background-image: url(../images/clases-background.jpg);
+
+    /* Celular*/
+    @media only screen and (max-width: 767px) {
+        background-position: 50%;
+    }
+}
+/*Fin Primera Sección*/
+
+/*Segunda Sección: H2*/
+.clases-heading2 {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: -50px;
+
+    /* Celular y Tablet*/
+    @media only screen and (max-width: 992px) {
+        margin-bottom: 0px;
+    }
+
+    .gif {
+        width: 70px;
+    }
+}
+/*Fin Segunda Sección: H2*/
+
+/* Tercera Seccion */
+.clases--divContenedorMayor {
+    align-items: center;
+    padding: 40px 0px;
+    border-bottom: 1px solid nth($colores, 5);
+
+    /* Celular */
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Celular y Tablet*/
+    @media only screen and (max-width: 992px) {
+        .clases--divContenedorMayor--divs {
+            padding: 15px;
+        }
+
+        .clases-imagenes {
+            align-items: center;
+            text-align: center;
+        } 
+    }
+}
+/*Fin Tercera Seccion*/
+
+/* Fin CLASES */

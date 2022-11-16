@@ -1,0 +1,16 @@
+/* BASE */
+@import './base/extends';
+@import './base/listas';
+
+/* GENERALES */
+@import './generales/genericos';
+@import './generales/header';
+@import './generales/footer';
+@import './base/extends';
+
+/* PÁGINAS */
+@import './paginas/index';
+@import './paginas/sobre-mi';
+@import './paginas/yoga-integral';
+@import './paginas/clases';
+@import './paginas/otros-servicios';

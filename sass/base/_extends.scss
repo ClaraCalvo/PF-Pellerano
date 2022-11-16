@@ -1,0 +1,76 @@
+/* Extends */
+@import './listas';
+
+/*PRIMERA SECCION > APLICA EN TODAS LAS PÁGINAS (solo cambia background) */
+%primera-seccion {
+    margin: 0;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+
+    .primeraSeccion--divContainer {
+        text-align: right;
+        padding-top: 350px;
+        padding-right: 80px;
+    
+        h1 {
+            color: nth($colores, 2);
+            text-shadow: 1px 4px 4px black;
+        }
+    }
+}
+
+/* INDEX / SOBRE MI > 4TA SECCION */
+%index-y-sobreMi--cuartaSeccion {
+    @media only screen and (min-width: 992px) {
+        padding: 60px 0px;
+        overflow: hidden;
+    }
+
+    .index-y-sobreMi--cuartaSeccion {
+        @media only screen and (max-width: 991px) { 
+            /* Celular y Tablet */
+            padding: 40px;
+            text-align: center;
+            align-items: center;
+        }
+    
+        .index-y-sobreMi--cuartaSeccion--div1 {
+            padding-left: 50px;
+        
+            /* Celular */
+            @media only screen and (max-width: 767px) {
+                padding-left: 0px;
+            }
+        
+            /* Tablet */
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                padding-left: 0px;
+            }
+        }
+
+        .div-cuartaSeccion-movil {
+            @media only screen and (min-width: 992px) {
+                padding-right: 50px;
+            }
+        }   
+    
+        .imagen {
+            margin-left: 40px;
+            width: 400px;
+        
+            /* Celular */
+            @media only screen and (max-width: 767px) {
+                padding: 40px 0px;
+                margin: 0;
+            }
+        }
+    
+        .noneTablet {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                display: none;
+            }
+        }
+        
+    }
+}

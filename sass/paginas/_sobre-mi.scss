@@ -1,0 +1,43 @@
+/* SOBRE MÍ */
+@import '../base/listas';
+
+/*Primera Sección*/
+.sobre-miPrimeraSeccion {
+    @extend %primera-seccion;
+    background-image: url(../images/sobre-mi-background.jpg);
+
+    /* Celular */
+    @media only screen and (max-width: 767px) {
+        background-position: 50%;
+    }
+}
+/*Fin Primera Sección*/
+
+/*Segunda Sección*/
+.sobre-mi--segunaSeccion {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+}
+/*Fin Segunda Sección*/
+
+/*Tercera Seccion*/
+/*Imagen Separadora*/
+.sobre-mi--separador2 {
+    width: 100%;
+    height: 200px;
+
+    /* Celular */
+    @media only screen and (max-width: 768px) {
+        height: 120px;
+    }
+}
+/* Fin Imagen Separadora */
+/* Fin Tercera Seccion */
+
+/* Cuarta Seccion */
+.container {
+    @extend %index-y-sobreMi--cuartaSeccion;
+}
+/* Fin Cuarta Seccion */
+/* Fin SOBRE MÍ */

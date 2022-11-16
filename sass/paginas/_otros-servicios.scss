@@ -1,0 +1,35 @@
+/* OTROS SERVICIOS */
+@import '../base/listas';
+
+/*Primera Sección*/
+.otros-serviciosPrimeraSeccion {
+    @extend %primera-seccion;
+    background-image: url(../images/otros-servicios-background.jpg);
+    
+    /* Celular */
+    @media only screen and (max-width: 767px) {
+        background-position: 50%;
+    }
+}
+/*Fin Primera Sección*/
+
+/*Segunda Seccion: H2*/
+.otros-servicios--h2 {
+    text-align: center;
+    padding-top: 40px;
+}
+/*Fin Segunda Seccion: H2*/
+
+/*Tercera Seccion*/
+.otros-servicios--divs {
+    padding: 0px 20px;
+
+    /*Celular y Tablet*/
+    @media only screen and (max-width: 992px) {
+        padding: 25px;
+        border-bottom: 1px solid nth($colores, 5);
+    }
+}
+/*Fin Tercera Seccion*/
+
+/* Fin OTROS SERVICIOS */

@@ -1,0 +1,36 @@
+/* HEADER */
+@import '../base/listas';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: nth($colores, 2);
+    height: 90px;
+    margin: 0px 30px;
+
+    /* Celular y Tablet*/
+    @media only screen and (max-width: 992px) {
+        margin: 0px;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            margin-left: 30px;
+
+            /* Celular y Tablet*/
+            @media only screen and (max-width: 992px) {
+                margin-left: 10px;
+                border-bottom: 1px solid nth($colores, 5);
+            }
+
+            .color-menu {
+                color: nth($colores, 1);
+            }
+        }
+    }
+}
+/* FIN HEADER */

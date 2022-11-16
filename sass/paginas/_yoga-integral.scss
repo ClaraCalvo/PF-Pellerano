@@ -1,0 +1,89 @@
+/* YOGA INTEGRAL */
+@import '../base/listas';
+
+/*Primera Sección*/
+.yoga-integralPrimeraSeccion {
+    @extend %primera-seccion;
+    background-image: url(../images/yoga-integral-background.jpg);
+
+    /* Celular */
+    @media only screen and (max-width: 767px) {
+        background-position: 50%;
+    }
+}
+/*Fin Primera Sección*/
+
+/*Segunda Seccion*/
+.yoga-integral--segunda-seccion {
+    text-align: center;
+    padding: 40px;
+
+    /* Celular */
+    @media only screen and (max-width: 767px) {
+        padding: 40px 0px;
+    }
+}
+/*Fin Segunda Seccion*/
+
+/*Tercera Seccion*/
+.yogaIntegral-terceraSeccion {
+    margin: 20px 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: nth($colores, 4);
+
+    h2  {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .yogaIntegral-terceraSeccion-divstodos {
+        @media only screen and (max-width: 991px) {
+            /* Celular y Tablet */
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .yogaIntegral-terceraSeccion-div1y3 {
+            padding: 0px 20px;
+            text-align: left;
+            align-items: center;
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                text-align: center;
+                align-items: center;
+            }
+        }
+
+        .yogaIntegral-terceraSeccion-div2 {
+            padding: 0px 20px;
+            text-align: right;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                text-align: center;
+                align-items: center;
+            }
+        }
+    }
+}
+/*Fin Tercera Seccion*/
+
+/*Cuarta Seccion*/
+.yoga-integral--preguntas {
+    text-align: center;
+    padding: 50px 0px;
+
+    .yoga-integral--preguntas-div {
+        padding-bottom: 30px;
+
+        .accordion-button:not(.collapsed) {
+            color: nth($colores, 1);
+            background-color: nth($colores, 4);
+        }
+    }
+}
+/*Fin Cuarta Seccion*/
+
+/* Fin YOGA INTEGRAL */

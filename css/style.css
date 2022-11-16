@@ -1,538 +1,547 @@
-/* GENERALES */
-
-* { 
-    margin: 0; 
-    padding: 0;
+@charset "UTF-8";
+/* GENERALES */ /* Extends */ /* Listas */
+/*PRIMERA SECCION > APLICA EN TODAS LAS PÁGINAS (solo cambia background) */
+.otros-serviciosPrimeraSeccion, .clasesPrimeraSeccion, .yoga-integralPrimeraSeccion, .sobre-miPrimeraSeccion, .indexPrimeraSeccion {
+  margin: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+}
+.otros-serviciosPrimeraSeccion .primeraSeccion--divContainer, .clasesPrimeraSeccion .primeraSeccion--divContainer, .yoga-integralPrimeraSeccion .primeraSeccion--divContainer, .sobre-miPrimeraSeccion .primeraSeccion--divContainer, .indexPrimeraSeccion .primeraSeccion--divContainer {
+  text-align: right;
+  padding-top: 350px;
+  padding-right: 80px;
+}
+.otros-serviciosPrimeraSeccion .primeraSeccion--divContainer h1, .clasesPrimeraSeccion .primeraSeccion--divContainer h1, .yoga-integralPrimeraSeccion .primeraSeccion--divContainer h1, .sobre-miPrimeraSeccion .primeraSeccion--divContainer h1, .indexPrimeraSeccion .primeraSeccion--divContainer h1 {
+  color: white;
+  text-shadow: 1px 4px 4px black;
 }
 
-/*ESCRITORIO*/
-section {
-    margin: 0px 80px;
+/* INDEX / SOBRE MI > 4TA SECCION */
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 60px 0px;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container .index-y-sobreMi--cuartaSeccion {
+    /* Celular y Tablet */
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+  }
+}
+.container .index-y-sobreMi--cuartaSeccion .index-y-sobreMi--cuartaSeccion--div1 {
+  padding-left: 50px;
+  /* Celular */
+  /* Tablet */
+}
+@media only screen and (max-width: 767px) {
+  .container .index-y-sobreMi--cuartaSeccion .index-y-sobreMi--cuartaSeccion--div1 {
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container .index-y-sobreMi--cuartaSeccion .index-y-sobreMi--cuartaSeccion--div1 {
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container .index-y-sobreMi--cuartaSeccion .div-cuartaSeccion-movil {
+    padding-right: 50px;
+  }
+}
+.container .index-y-sobreMi--cuartaSeccion .imagen {
+  margin-left: 40px;
+  width: 400px;
+  /* Celular */
+}
+@media only screen and (max-width: 767px) {
+  .container .index-y-sobreMi--cuartaSeccion .imagen {
+    padding: 40px 0px;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container .index-y-sobreMi--cuartaSeccion .noneTablet {
+    display: none;
+  }
 }
 
-/*CELULAR Y TABLET */
-@media only screen and (max-width: 992px) {
-    section {
-        margin: 0px 40px;
-    }
-}
-
-footer {
-    margin: 0px 80px;
+/* Listas */ /* MEDIDAS */ /* Listas */
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Lora', serif;
-    }
-
-.botones {
-    border: none;
-    border-radius: 15px;
-    padding: 2px 10px;
-    background-color: #cb6b31;
-    transition: all 1s;
+  font-family: "Lora", serif;
 }
-
-.botones:hover {
-    transform: scale(1.2);
+body section {
+  /* Escritorio */
+  margin: 0px 80px;
 }
-
-/*Header*/
-/*Menú*/
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    height: 90px;
-}
-
-.nav-margin {
-    margin: 0px 30px;
-}
-
-ul {
-    display: flex;
-}
-
-li {
-    list-style: none;
-    margin-left: 30px;
-}
-
-/*MÓVIL Y TABLET*/
 @media only screen and (max-width: 992px) {
-
-    .nav-margin {
-        margin: 0px;
-    }
-
-    li {
-        margin-left: 10px;
-        border-bottom: 1px solid lightgray;
-    }
+  body section {
+    /* Celular y Tablet */
+    margin: 0px 40px;
+  }
 }
 
+h2 {
+  color: #cb6b31;
+  font-weight: 600;
+}
+
+/* FIN MEDIDAS*/
+/* BOTONES */
+.botones {
+  border: none;
+  border-radius: 15px;
+  padding: 2px 10px;
+  background-color: #cb6b31;
+  transition: all 1s;
+}
+.botones:hover {
+  transform: scale(1.2);
+}
+.botones a {
+  text-decoration: none;
+  color: white;
+}
+.botones a:hover {
+  color: white;
+}
+
+/* FIN BOTONES */
+/* ENLACES (a) */
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: #212529;
 }
-
 a:hover {
-    color: white;
+  color: #cb6b31;
 }
 
-.color-menu {
-    color: #cb6b31;
+/* FIN ENLACES (a) */
+/* HEADER */ /* Listas */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+  margin: 0px 30px;
+  /* Celular y Tablet*/
+}
+@media only screen and (max-width: 992px) {
+  nav {
+    margin: 0px;
+  }
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 30px;
+  /* Celular y Tablet*/
+}
+@media only screen and (max-width: 992px) {
+  nav ul li {
+    margin-left: 10px;
+    border-bottom: 1px solid rgb(233, 227, 227);
+  }
+}
+nav ul li .color-menu {
+  color: #cb6b31;
 }
 
-
-/*Fin Menú*/
-/*Fin Header*/
-
-/*Footer*/
-
-.footer-fondo {
-    background-color: rgb(255, 240, 219);
+/* FIN HEADER */
+/* FOOTER */ /* Listas */
+footer {
+  margin: 0px 80px;
+  background-color: rgba(255, 240, 219, 0.753);
+  /* Logo */
+}
+footer .divFooter1-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+footer .redes {
+  padding: 10px;
+  border: rgb(233, 227, 227) solid 1px;
+}
+@media only screen and (max-width: 768px) {
+  footer .redes {
+    border: 0px;
+    border-top: rgb(233, 227, 227) solid 1px;
+  }
+}
+footer .a-footer {
+  color: #212529;
+}
+footer .a-footer:hover {
+  color: #cb6b31;
 }
 
-.redes {
-    padding: 10px;
-    border: rgb(233, 227, 227) solid 1px;
+/* FIN FOOTER */
+/* Extends */ /* Listas */
+/*PRIMERA SECCION > APLICA EN TODAS LAS PÁGINAS (solo cambia background) */
+.otros-serviciosPrimeraSeccion, .clasesPrimeraSeccion, .yoga-integralPrimeraSeccion, .sobre-miPrimeraSeccion, .indexPrimeraSeccion {
+  margin: 0;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+}
+.otros-serviciosPrimeraSeccion .primeraSeccion--divContainer, .clasesPrimeraSeccion .primeraSeccion--divContainer, .yoga-integralPrimeraSeccion .primeraSeccion--divContainer, .sobre-miPrimeraSeccion .primeraSeccion--divContainer, .indexPrimeraSeccion .primeraSeccion--divContainer {
+  text-align: right;
+  padding-top: 350px;
+  padding-right: 80px;
+}
+.otros-serviciosPrimeraSeccion .primeraSeccion--divContainer h1, .clasesPrimeraSeccion .primeraSeccion--divContainer h1, .yoga-integralPrimeraSeccion .primeraSeccion--divContainer h1, .sobre-miPrimeraSeccion .primeraSeccion--divContainer h1, .indexPrimeraSeccion .primeraSeccion--divContainer h1 {
+  color: white;
+  text-shadow: 1px 4px 4px black;
 }
 
-.a-footer {
-    color: var(--bs-body-color);
+/* INDEX / SOBRE MI > 4TA SECCION */
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 60px 0px;
+    overflow: hidden;
+  }
 }
-
-.a-footer:hover {
-    color: #cb6b31;
-}
-
-/*Logo*/
-.divFooter1-logo {
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 991px) {
+  .container .index-y-sobreMi--cuartaSeccion {
+    /* Celular y Tablet */
+    padding: 40px;
+    text-align: center;
     align-items: center;
-    padding: 10px;
-
+  }
 }
-/*Fin Logo*/
-/*Fin Footer*/
-/* Fin GENERALES */
-
-/* --------------------------------------------------------------------------------------------- */
-
-/* INDEX */
-
-/*Primera Sección*/
-/*Background*/
-#indexPrimeraSeccion {
+.container .index-y-sobreMi--cuartaSeccion .index-y-sobreMi--cuartaSeccion--div1 {
+  padding-left: 50px;
+  /* Celular */
+  /* Tablet */
+}
+@media only screen and (max-width: 767px) {
+  .container .index-y-sobreMi--cuartaSeccion .index-y-sobreMi--cuartaSeccion--div1 {
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container .index-y-sobreMi--cuartaSeccion .index-y-sobreMi--cuartaSeccion--div1 {
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container .index-y-sobreMi--cuartaSeccion .div-cuartaSeccion-movil {
+    padding-right: 50px;
+  }
+}
+.container .index-y-sobreMi--cuartaSeccion .imagen {
+  margin-left: 40px;
+  width: 400px;
+  /* Celular */
+}
+@media only screen and (max-width: 767px) {
+  .container .index-y-sobreMi--cuartaSeccion .imagen {
+    padding: 40px 0px;
     margin: 0;
-    height: 500px;
-    width: 100%;
-    background-image: url(../images/bakground-primera-seccion.JPG);
-    background-size: cover;
+  }
 }
-/*Fin Background*/
-
-/*APLICA A TODAS LAS SECCIONES*/
-/*divContainer*/
-.primeraSeccion--divContainer {
-    text-align: right;
-    padding-top: 350px;
-    padding-right: 80px;
-}
-/*Fin divContainer*/
-
-h1 {
-    color: white;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container .index-y-sobreMi--cuartaSeccion .noneTablet {
+    display: none;
+  }
 }
 
-.h1-personalizado {
-    text-shadow: 1px 4px 4px black;
+/* TODAS LAS PÁGINAS */
+/* INDEX */ /* Listas */
+/*Primera Sección*/
+.indexPrimeraSeccion {
+  background-image: url(../images/bakground-primera-seccion.JPG);
 }
 
-/*Fin Primera Sección/*
-
+/*Fin Primera Sección*/
 /*Segunda Sección*/
 #indexSegundaSeccion {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /*divContainer1 - Título y Párrafo*/
+  /*divContainer2 - Beneficios*/
+  /*Botón*/
 }
-
-/*divContainer1 - Título y Párrafo*/
-.segundaSeccion-divContainer1 {
-    text-align: center;
+#indexSegundaSeccion .segundaSeccion-divContainer1 {
+  text-align: center;
 }
-/*Fin divContainer1 - Título y Párrafo*/
-
-/*ESCRITORIO*/
-/*divContainer2 - Beneficios*/
-.segundaSeccion-divContainer2 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+#indexSegundaSeccion .segundaSeccion-divContainer2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* Celular */
+  /*Div: Beneficios*/
 }
-
-/*Div: Beneficios*/
-.segundaSeccion-article--beneficios {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    transition: all 10s;
-}
-
-/*CELULAR*/
 @media only screen and (max-width: 768px) {
-    .segundaSeccion-divContainer2 {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    .segundaSeccion-article--beneficios {
-        padding-top: 20px;
-    }  
+  #indexSegundaSeccion .segundaSeccion-divContainer2 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+#indexSegundaSeccion .segundaSeccion-divContainer2 .segundaSeccion-article--beneficios {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  transition: all 3s;
+  /* Celular */
+}
+@media only screen and (max-width: 768px) {
+  #indexSegundaSeccion .segundaSeccion-divContainer2 .segundaSeccion-article--beneficios {
+    padding-top: 20px;
+  }
+}
+#indexSegundaSeccion .segundaSeccion-boton {
+  text-align: center;
 }
 
-/*Fin Div: Beneficios*/
-/*Fin divContainer2 - Beneficios*/
-
-/*Botón*/
-.segundaSeccion-boton {
-    text-align: center;
-}
-/*Fin Botón*/
 /*Fin Segunda Sección*/
-
 /*Tercera Sección*/
 #indexTerceraSeccion {
-    margin: 0;
-    background-color: rgb(89, 151, 116);
-    height: 100px;
+  margin: 0;
+  background-color: rgb(89, 151, 116);
+  height: 100px;
+  /*Frase*/
 }
-
-/*Frase*/
-.indexFrase {
-    text-align: center;
-    padding-top: 30px;
-    font-size: x-large;
+#indexTerceraSeccion p {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 22px;
+  /* Celular */
 }
-/*Fin Frase*/
-/*Fin Tercera Sección*/
-
-/*Cuarta Sección*/
-.imagen {
-    width: 100%;
-}
-
-.index-cuartaSeccion-instructora {
-    padding-left: 50px;
-}
-
-/*CELULAR*/
 @media only screen and (max-width: 767px) {
-    .imagen {
-        padding: 40px 0px;
-    }
-
-    .index-cuartaSeccion {
-        padding: 40px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .index-cuartaSeccion-instructora {
-        padding-left: 0px;
-    }
-    
+  #indexTerceraSeccion p {
+    font-size: 18px;
+  }
 }
 
-/*TABLET*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .noneTablet {
-        display: none;
-    }
-
-    .index-cuartaSeccion {
-        padding: 40px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .index-cuartaSeccion-instructora {
-        padding-left: 0px;
-    }
-}
-
-/*ESCRITORIO*/
-@media only screen and (min-width: 992px) {
-    .container {
-        padding: 60px 0px;
-        overflow: hidden;
-    }
-
-    .div-instructora-movil {
-        padding-right: 50px;
-    }
-
-    .imagen {
-        margin-left: 40px;
-        width: 400px;
-    }
-}
-/*Fin Cuarta Sección*/
-
+/*Fin Tercera Sección*/
+/* Cuarta Seccion */
+/* Fin Cuarta Seccion */
 /* Fin INDEX */
-
-/* --------------------------------------------------------------------------------------------- */
-
-/* SOBRE MÍ */
-
+/* SOBRE MÍ */ /* Listas */
 /*Primera Sección*/
-/*Background*/
-#sobre-miPrimeraSeccion {
-    margin: 0;
-    height: 500px;
-    width: 100%;
-    background-image: url(../images/sobre-mi-background.jpg);
-    background-size: cover;
+.sobre-miPrimeraSeccion {
+  background-image: url(../images/sobre-mi-background.jpg);
+  /* Celular */
+}
+@media only screen and (max-width: 767px) {
+  .sobre-miPrimeraSeccion {
+    background-position: 50%;
+  }
 }
 
-/*Fin Background*/
 /*Fin Primera Sección*/
-
 /*Segunda Sección*/
 .sobre-mi--segunaSeccion {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;    
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-/*Fin Segunda Sección*/
 
+/*Fin Segunda Sección*/
 /*Tercera Seccion*/
 /*Imagen Separadora*/
-.sobre-mi--separador {
-    margin: 0;
-    height: 200px;
-    width: 100%;
-    background-image: url(../images/sobre-mi-separador.jpg);
+.sobre-mi--separador2 {
+  width: 100%;
+  height: 200px;
+  /* Celular */
 }
+@media only screen and (max-width: 768px) {
+  .sobre-mi--separador2 {
+    height: 120px;
+  }
+}
+
 /* Fin Imagen Separadora */
 /* Fin Tercera Seccion */
-
-/*Cuarta Seccion*/
-.sobre-mi--cuarta-seccion {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.sobre-mi--cuarta-seccion-div {
-    width: 600px;
-    padding-top: 40px;
-}
-
-.sobre-mi--cuartaseccion-img {
-    padding-top: 15px;
-}
-
-/*Fin Cuarta Seccion*/
-
+/* Cuarta Seccion */
+/* Fin Cuarta Seccion */
 /* Fin SOBRE MÍ */
-
-/* --------------------------------------------------------------------------------------------- */
-
-/* YOGA INTEGRAL */
-
+/* YOGA INTEGRAL */ /* Listas */
 /*Primera Sección*/
-/*Background*/
-#yoga-integralPrimeraSeccion {
-    margin: 0;
-    height: 500px;
-    width: 100%;
-    background-image: url(../images/yoga-integral-background.jpg);
-    background-size: cover;
+.yoga-integralPrimeraSeccion {
+  background-image: url(../images/yoga-integral-background.jpg);
+  /* Celular */
 }
-/*Fin Background*/
-
-/*divContainer*/
-.yogaIntegral--primeraSeccion--divContainer {
-    text-align: right;
-    padding-top: 350px;
-    padding-right: 80px;
+@media only screen and (max-width: 767px) {
+  .yoga-integralPrimeraSeccion {
+    background-position: 50%;
+  }
 }
-/*Fin divContainer*/
 
 /*Fin Primera Sección*/
-
 /*Segunda Seccion*/
-.yoga-integral--primera-seccion {
-    text-align: center;
-    padding: 40px;
+.yoga-integral--segunda-seccion {
+  text-align: center;
+  padding: 40px;
+  /* Celular */
 }
-/*Fin Segunda Seccion*/
+@media only screen and (max-width: 767px) {
+  .yoga-integral--segunda-seccion {
+    padding: 40px 0px;
+  }
+}
 
+/*Fin Segunda Seccion*/
 /*Tercera Seccion*/
 .yogaIntegral-terceraSeccion {
-    margin: 20px 0px;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    background-color: #fff2ea;
+  margin: 20px 0px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: rgba(255, 240, 219, 0.753);
 }
-
-.yogaIntegral-terceraSeccion-h2 {
-    text-align: center;
-    padding-bottom: 20px;
+.yogaIntegral-terceraSeccion h2 {
+  text-align: center;
+  padding-bottom: 20px;
 }
-
-/*CELULAR Y TABLET*/
 @media only screen and (max-width: 991px) {
-    .yogaIntegral-terceraSeccion-divstodos {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+  .yogaIntegral-terceraSeccion .yogaIntegral-terceraSeccion-divstodos {
+    /* Celular y Tablet */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
-
-.yogaIntegral-terceraSeccion-div1y3 {
-    padding: 0px 20px;
-    text-align: left;
-    align-items: center;
+.yogaIntegral-terceraSeccion .yogaIntegral-terceraSeccion-divstodos .yogaIntegral-terceraSeccion-div1y3 {
+  padding: 0px 20px;
+  text-align: left;
+  align-items: center;
 }
-
-.yogaIntegral-terceraSeccion-div2 {
-    padding: 0px 20px;
-    text-align: right;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-}
-
-/*TABLET*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .yogaIntegral-terceraSeccion-div2 {
-        padding-right: 20px;
-        padding-left: 20px;
-        text-align: left;
-        align-items: center;
-        flex-wrap: wrap-reverse;
-    }
+  .yogaIntegral-terceraSeccion .yogaIntegral-terceraSeccion-divstodos .yogaIntegral-terceraSeccion-div1y3 {
+    text-align: center;
+    align-items: center;
+  }
 }
-
-
-
+.yogaIntegral-terceraSeccion .yogaIntegral-terceraSeccion-divstodos .yogaIntegral-terceraSeccion-div2 {
+  padding: 0px 20px;
+  text-align: right;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .yogaIntegral-terceraSeccion .yogaIntegral-terceraSeccion-divstodos .yogaIntegral-terceraSeccion-div2 {
+    text-align: center;
+    align-items: center;
+  }
+}
 
 /*Fin Tercera Seccion*/
-
 /*Cuarta Seccion*/
-
 .yoga-integral--preguntas {
-    text-align: center;
-    padding: 50px 0px;
+  text-align: center;
+  padding: 50px 0px;
 }
-
-.accordion-button:not(.collapsed) {
-    color: #cb6b31;
-    background-color: #faefe7;
+.yoga-integral--preguntas .yoga-integral--preguntas-div {
+  padding-bottom: 30px;
 }
-
-.yoga-integral--preguntas-div {
-    padding-bottom: 30px;
+.yoga-integral--preguntas .yoga-integral--preguntas-div .accordion-button:not(.collapsed) {
+  color: #cb6b31;
+  background-color: rgba(255, 240, 219, 0.753);
 }
 
 /*Fin Cuarta Seccion*/
-
 /* Fin YOGA INTEGRAL */
-
-/* --------------------------------------------------------------------------------------------- */
-
-/* CLASES */
-
+/* CLASES */ /* Listas */
 /*Primera Sección*/
-/*Background*/
-#clasesPrimeraSeccion {
-    margin: 0;
-    height: 500px;
-    width: 100%;
-    background-image: url(../images/clases-background.jpg);
-    background-size: cover;
+.clasesPrimeraSeccion {
+  background-image: url(../images/clases-background.jpg);
+  /* Celular*/
 }
-/*Fin Background*/
+@media only screen and (max-width: 767px) {
+  .clasesPrimeraSeccion {
+    background-position: 50%;
+  }
+}
 
+/*Fin Primera Sección*/
 /*Segunda Sección: H2*/
 .clases-heading2 {
-    text-align: center;
-    padding: 40px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: -50px;
+  /* Celular y Tablet*/
 }
+@media only screen and (max-width: 992px) {
+  .clases-heading2 {
+    margin-bottom: 0px;
+  }
+}
+.clases-heading2 .gif {
+  width: 70px;
+}
+
 /*Fin Segunda Sección: H2*/
-
-/*Tercera Seccion*/
-.clases-divsContenedores {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 40px;
+/* Tercera Seccion */
+.clases--divContenedorMayor {
+  align-items: center;
+  padding: 40px 0px;
+  border-bottom: 1px solid rgb(233, 227, 227);
+  /* Celular */
+  /* Celular y Tablet*/
 }
-
-.clases-divsContenedores--parrafos {
-    width: 500px;
-    padding-right: 100px;
-
-}
-
-.clases-divsContenedores--direcciones {
+@media only screen and (max-width: 768px) {
+  .clases--divContenedorMayor {
     text-align: center;
+    padding: 15px;
+  }
 }
+@media only screen and (max-width: 992px) {
+  .clases--divContenedorMayor .clases--divContenedorMayor--divs {
+    padding: 15px;
+  }
+  .clases--divContenedorMayor .clases-imagenes {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /*Fin Tercera Seccion*/
-
 /* Fin CLASES */
-
-/* --------------------------------------------------------------------------------------------- */
-
-/* OTROS SERVICIOS */
-
+/* OTROS SERVICIOS */ /* Listas */
 /*Primera Sección*/
-/*Background*/
-#otros-serviciosPrimeraSeccion {
-    margin: 0;
-    height: 500px;
-    width: 100%;
-    background-image: url(../images/otros-servicios-background.jpg);
-    background-size: cover;
+.otros-serviciosPrimeraSeccion {
+  background-image: url(../images/otros-servicios-background.jpg);
+  /* Celular */
 }
-/*Fin Background*/
+@media only screen and (max-width: 767px) {
+  .otros-serviciosPrimeraSeccion {
+    background-position: 50%;
+  }
+}
 
+/*Fin Primera Sección*/
 /*Segunda Seccion: H2*/
 .otros-servicios--h2 {
-    text-align: center;
-    padding: 40px;
+  text-align: center;
+  padding-top: 40px;
 }
+
 /*Fin Segunda Seccion: H2*/
-
 /*Tercera Seccion*/
-.otros-servicios--secciones {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 40px;
+.otros-servicios--divs {
+  padding: 0px 20px;
+  /*Celular y Tablet*/
+}
+@media only screen and (max-width: 992px) {
+  .otros-servicios--divs {
+    padding: 25px;
+    border-bottom: 1px solid rgb(233, 227, 227);
+  }
 }
 
-.otros-servicios--secciones-divs {
-    text-align: center;
-    width: 550px;
-    justify-content: center;
-}
-
-.otros-servicios--secciones-divs--parrafos {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.otros-servicios--secciones-disvs--instagram {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-}
 /*Fin Tercera Seccion*/
-
 /* Fin OTROS SERVICIOS */
+
+/*# sourceMappingURL=style.css.map */

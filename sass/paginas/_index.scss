@@ -1,0 +1,79 @@
+/* INDEX */
+@import '../base/listas';
+
+/*Primera Sección*/
+.indexPrimeraSeccion {
+    @extend %primera-seccion;
+    background-image: url(../images/bakground-primera-seccion.JPG);
+}
+/*Fin Primera Sección*/
+
+/*Segunda Sección*/
+#indexSegundaSeccion {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    /*divContainer1 - Título y Párrafo*/
+    .segundaSeccion-divContainer1 {
+        text-align: center;
+    }
+
+    /*divContainer2 - Beneficios*/
+    .segundaSeccion-divContainer2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+        /* Celular */
+        @media only screen and (max-width: 768px) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        }
+        
+        /*Div: Beneficios*/
+        .segundaSeccion-article--beneficios {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            transition: all 3s;
+
+            /* Celular */
+            @media only screen and (max-width: 768px) {
+                padding-top: 20px;
+            }  
+        }
+    }
+
+    /*Botón*/
+    .segundaSeccion-boton {
+        text-align: center;
+    }
+}
+/*Fin Segunda Sección*/
+
+/*Tercera Sección*/
+#indexTerceraSeccion {
+    margin: 0;
+    background-color: nth($colores, 6);
+    height: 100px;
+
+    /*Frase*/
+    p {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 22px;
+
+        /* Celular */
+        @media only screen and (max-width:767px) {
+            font-size: 18px;
+        }
+    }
+}
+/*Fin Tercera Sección*/
+
+/* Cuarta Seccion */
+.container {
+    @extend %index-y-sobreMi--cuartaSeccion;
+}
+/* Fin Cuarta Seccion */
+
+/* Fin INDEX */
