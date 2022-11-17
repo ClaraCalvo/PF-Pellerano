@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* GENERALES */ /* Extends */ /* Listas */
+/* BASE */ /* Extends */ /* Listas */
 /*PRIMERA SECCION > APLICA EN TODAS LAS PÁGINAS (solo cambia background) */
 .otros-serviciosPrimeraSeccion, .clasesPrimeraSeccion, .yoga-integralPrimeraSeccion, .sobre-miPrimeraSeccion, .indexPrimeraSeccion {
   margin: 0;
@@ -69,7 +69,9 @@
   }
 }
 
-/* Listas */ /* MEDIDAS */ /* Listas */
+/* Listas */
+/* GENERALES */
+/* MEDIDAS */ /* Listas */
 * {
   margin: 0;
   padding: 0;
@@ -259,11 +261,11 @@ footer .a-footer:hover {
   }
 }
 
-/* TODAS LAS PÁGINAS */
+/* PÁGINAS */
 /* INDEX */ /* Listas */
 /*Primera Sección*/
 .indexPrimeraSeccion {
-  background-image: url(../images/bakground-primera-seccion.JPG);
+  background-image: url(../images/background-primera-seccion.jpg);
 }
 
 /*Fin Primera Sección*/
