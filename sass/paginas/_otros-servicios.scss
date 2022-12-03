@@ -29,6 +29,15 @@
         padding: 25px;
         border-bottom: 1px solid nth($colores, 5);
     }
+
+    div p {
+        padding: 0px 40px;
+
+        /*Celular y Tablet*/
+        @media only screen and (max-width: 992px) {
+            padding: 0px;
+        }
+    }
 }
 /*Fin Tercera Seccion*/
 
